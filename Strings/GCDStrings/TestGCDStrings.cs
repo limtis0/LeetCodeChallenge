@@ -18,7 +18,7 @@ public class TestGDCStrings
         Assert.AreEqual(expected, actual);
     }
 
-        [TestMethod]
+    [TestMethod]
     public void TestPassing()
     {
         // Arrange
