@@ -7,7 +7,7 @@ public class TestCanPlaceFlowers
     public void Test1()
     {
         // Arrange
-        int[] flowerbed = { 1,0,0,0,1 };
+        int[] flowerbed = { 1, 0, 0, 0, 1 };
         int n = 1;
         bool expected = true;
 
@@ -22,7 +22,7 @@ public class TestCanPlaceFlowers
     public void Test2()
     {
         // Arrange
-        int[] flowerbed = { 1,0,0,0,1 };
+        int[] flowerbed = { 1, 0, 0, 0, 1 };
         int n = 2;
         bool expected = false;
 
