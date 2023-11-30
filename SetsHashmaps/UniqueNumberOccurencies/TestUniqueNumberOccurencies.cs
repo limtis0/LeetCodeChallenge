@@ -7,7 +7,7 @@ public class TestUniqueNumberOccurencies
     public void Test1()
     {
         // Arrange
-        int[] arr = {1,2,2,1,1,3};
+        int[] arr = { 1, 2, 2, 1, 1, 3 };
         bool expected = true;
 
         // Act
@@ -21,7 +21,7 @@ public class TestUniqueNumberOccurencies
     public void Test2()
     {
         // Arrange
-        int[] arr = {-3,0,1,-3,1,1,1,-3,10,0};
+        int[] arr = { -3, 0, 1, -3, 1, 1, 1, -3, 10, 0 };
         bool expected = true;
 
         // Act
@@ -35,7 +35,7 @@ public class TestUniqueNumberOccurencies
     public void Test3()
     {
         // Arrange
-        int[] arr = {1, 2};
+        int[] arr = { 1, 2 };
         bool expected = false;
 
         // Act
