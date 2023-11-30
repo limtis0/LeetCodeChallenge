@@ -1,7 +1,10 @@
 namespace LeetCodeChallenge;
 
-public class GCDStrings {
-    public static string FindGDCString(string x, string y) {
+// 1071. https://leetcode.com/problems/greatest-common-divisor-of-strings/
+public class GCDStrings
+{
+    public static string FindGDCString(string x, string y)
+    {
         return x + y == y + x ? y[..GCD(x.Length, y.Length)] : string.Empty;
     }
 
@@ -38,8 +41,8 @@ public class GCDStrings {
 
     // private static bool IsRepeatedSubstring(string sub, string original) {
     //     for (int i = 0; i < original.Length; i += sub.Length) {
-    //         string cmpSub = original.Substring(i, sub.Length);    
-            
+    //         string cmpSub = original.Substring(i, sub.Length);
+
     //         if (sub != cmpSub) {
     //             return false;
     //         }

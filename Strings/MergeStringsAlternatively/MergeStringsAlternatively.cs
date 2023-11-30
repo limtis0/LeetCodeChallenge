@@ -2,16 +2,20 @@ using System.Text;
 
 namespace LeetCodeChallenge;
 
-public class MergeStringsAlternatively {
-    public static string MergeAlternatively(string x, string y) {
+// 1768. https://leetcode.com/problems/merge-strings-alternately/
+public class MergeStringsAlternatively
+{
+    public static string MergeAlternatively(string x, string y)
+    {
         StringBuilder sb = new();
 
         // Same-length part
-        foreach (var (First, Second) in x.Zip(y)) {
+        foreach (var (First, Second) in x.Zip(y))
+        {
             sb.Append(First);
             sb.Append(Second);
         }
-        
+
         var leftover = (x.Length > y.Length) ? x[y.Length..] : y[x.Length..];
         sb.Append(leftover);
 

@@ -7,7 +7,7 @@ public class TestMaxAverageSubarray
     public void Test1()
     {
         // Arrange
-        int[] nums = { 1,12,-5,-6,50,3 };
+        int[] nums = { 1, 12, -5, -6, 50, 3 };
         int k = 4;
         double expected = 12.75;
 
