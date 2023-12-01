@@ -30,14 +30,15 @@ public class CloseStrings
             }
         }
 
-        // Check whether word2 has the same amount of unique values
         foreach (var (Key, Value) in frequencies2)
         {
+            // Check whether word2 has the same amount of unique values
             if (!frequencies1.ContainsKey(Key))
             {
                 return false;
             }
 
+            // Look for the similar amount of characters
             multiset.TryGetValue(Value, out int count);
 
             // If nothing left or non-existent
