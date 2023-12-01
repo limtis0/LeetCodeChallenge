@@ -40,6 +40,7 @@ public class Test$name
     {
         // Arrange
         int param = 1;
+        
         int expected = 1;
 
         // Act
