@@ -36,15 +36,11 @@ namespace LeetCodeChallenge;
 public class Test$name
 {
     [TestMethod]
-    public void Test1()
+    [DataRow("Hello, World", 1)]
+    public void Tests(string s, int expected)
     {
-        // Arrange
-        int param = 1;
-        
-        int expected = 1;
-
         // Act
-        int actual = $name.Solution(param);
+        int actual = $name.Solution(s);
 
         // Assert
         Assert.AreEqual(expected, actual);
